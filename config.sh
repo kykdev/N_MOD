@@ -33,7 +33,7 @@
 
 # This will be the folder name under /magisk or /cache/magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=naraewizng
 
 # Set to true if you need automount
 # Most mods would like it to be enabled
@@ -53,7 +53,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "    NaraeWiz Nougat Version    "
   ui_print "*******************************"
 }
 
@@ -67,14 +67,11 @@ print_modname() {
 
 # This is an example
 REPLACE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
 "
 
 # Construct your own list here
 REPLACE="
+/system/app/SecurityLogAgent
 "
 
 ##########################################################################################
@@ -86,6 +83,8 @@ REPLACE="
 set_permissions() {
   # Default permissions, don't remove them
   set_perm_recursive  $MODPATH  0  0  0755  0644
+
+  set_perm  $MODPATH/system/xbin/sysrw  0  2000  0755
 
   # Only some special files require specific permission settings
   # The default permissions should be good enough for most cases
