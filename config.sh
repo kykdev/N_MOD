@@ -72,6 +72,9 @@ REPLACE="
 # Construct your own list here
 REPLACE="
 /system/app/SecurityLogAgent
+/system/priv-app/imsservice
+/system/priv-app/SamsungCamera6
+/system/priv-app/SecSettings2
 "
 
 ##########################################################################################
