@@ -73,7 +73,6 @@ REPLACE="
 REPLACE="
 /system/app/SecurityLogAgent
 /system/priv-app/imsservice
-/system/priv-app/SamsungCamera6
 /system/priv-app/SecSettings2
 "
 
@@ -88,6 +87,7 @@ set_permissions() {
   set_perm_recursive  $MODPATH  0  0  0755  0644
 
   set_perm  $MODPATH/system/xbin/sysrw  0  2000  0755
+  set_perm  $MODPATH/system/xbin/shuttersound  0  2000  0755
 
   # Only some special files require specific permission settings
   # The default permissions should be good enough for most cases
