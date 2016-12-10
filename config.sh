@@ -40,7 +40,7 @@ MODID=naraewizng
 AUTOMOUNT=true
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=false
+POSTFSDATA=true
 
 # Set to true if you need late_start service script
 LATESTARTSERVICE=false
@@ -71,9 +71,15 @@ REPLACE="
 
 # Construct your own list here
 REPLACE="
+/system/app/KnoxAppsUpdateAgent
+/system/app/KnoxAttestationAgent
+/system/app/KnoxFolderContainer2
+/system/app/KnoxRemoteContentsProvider
+/system/app/KnoxSetupWizardClient
+/system/app/KnoxSwitcher
 /system/app/SecurityLogAgent
-/system/priv-app/imsservice
-/system/priv-app/SecSettings2
+/system/container
+/system/priv-app/SamsungCamera6
 "
 
 ##########################################################################################

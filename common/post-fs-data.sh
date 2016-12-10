@@ -5,3 +5,8 @@ MODDIR=${0%/*}
 
 # This script will be executed in post-fs-data mode
 # More info in the main Magisk thread
+
+if [ -f /data/magisk/resetprop ]; then
+	/data/magisk/resetprop ro.boot.warranty_bit 0
+	/data/magisk/resetprop ro.warranty_bit 0
+fi

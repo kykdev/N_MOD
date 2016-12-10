@@ -1,6 +1,6 @@
 ﻿<?xml  version="1.0" encoding="UTF-8" ?>
 <SamsungMobileFeature>
-  <Version>ED00017</Version>
+  <Version>ED00019</Version>
   <Country>KOREA, REPUBLIC OF</Country>
   <CountryISO>KR</CountryISO>
   <SalesCode>KTC</SalesCode>
@@ -30,13 +30,13 @@
     <CscFeature_Common_ConfigAllowedPackagesDuringDataSaving>com.ktpns.pa,com.kt.serviceagent</CscFeature_Common_ConfigAllowedPackagesDuringDataSaving>
     <CscFeature_Common_ConfigAllowedPackagesDuringPowerSaving>com.kt.olleh.storefront,com.ktpns.pa,com.kt.serviceagent,com.skt.skaf.OA00018282</CscFeature_Common_ConfigAllowedPackagesDuringPowerSaving>
     <CscFeature_Common_ConfigEmergencyModePackages>com.sec.android.fido.uaf.asm,com.sec.android.fido.uaf.client,com.samsung.android.authservice,com.samsung.android.pass,com.samsung.android.samsungpass</CscFeature_Common_ConfigEmergencyModePackages>
-    <CscFeature_Common_ConfigMarketInfoVariation>Disable</CscFeature_Common_ConfigMarketInfoVariation>
     <CscFeature_Common_ConfigNetworkModeDuringEmergency>NOCHANGE</CscFeature_Common_ConfigNetworkModeDuringEmergency>
     <CscFeature_Common_EnableHDVoiceDuring3GConnection>TRUE</CscFeature_Common_EnableHDVoiceDuring3GConnection>
     <CscFeature_Common_EnableOneTouchReport>TRUE</CscFeature_Common_EnableOneTouchReport>
     <CscFeature_Common_EnableUiDisplayMirroring>TRUE</CscFeature_Common_EnableUiDisplayMirroring>
     <CscFeature_Common_ReplaceSecBrandAsGalaxy>FALSE</CscFeature_Common_ReplaceSecBrandAsGalaxy>
     <CscFeature_Common_SupportDLNA>DMC_ONLY</CscFeature_Common_SupportDLNA>
+    <CscFeature_Common_SupportSamsungAdId>TRUE</CscFeature_Common_SupportSamsungAdId>
     <CscFeature_Common_SupportTwoPhoneService>TRUE</CscFeature_Common_SupportTwoPhoneService>
     <CscFeature_Contact_ANRConfig>1</CscFeature_Contact_ANRConfig>
     <CscFeature_Contact_ConfigAddressField>formatted</CscFeature_Contact_ConfigAddressField>
@@ -156,6 +156,7 @@
     <CscFeature_RIL_CallUssdException>TRUE</CscFeature_RIL_CallUssdException>
     <CscFeature_RIL_CallUssdKcs5601>TRUE</CscFeature_RIL_CallUssdKcs5601>
     <CscFeature_RIL_ConfigApnForHideDataIcon>ims,mms,cbs,fota</CscFeature_RIL_ConfigApnForHideDataIcon>
+    <CscFeature_RIL_ConfigGlobalModuleType>LTE</CscFeature_RIL_ConfigGlobalModuleType>
     <CscFeature_RIL_ConfigLteAttachApnType>ims</CscFeature_RIL_ConfigLteAttachApnType>
     <CscFeature_RIL_ConfigNetworkTypeCapability>KTT-KTT-GSM-KOR</CscFeature_RIL_ConfigNetworkTypeCapability>
     <CscFeature_RIL_ConfigSmsBroadcastType>KPAS</CscFeature_RIL_ConfigSmsBroadcastType>
@@ -221,6 +222,7 @@
     <CscFeature_Setting_ConfigOpRngToneLink>Ringtoyou</CscFeature_Setting_ConfigOpRngToneLink>
     <CscFeature_Setting_ConfigTypeHelp>1</CscFeature_Setting_ConfigTypeHelp>
     <CscFeature_Setting_DisableIsraelCountry>FALSE</CscFeature_Setting_DisableIsraelCountry>
+    <CscFeature_Setting_DisableMenuSoftwareUpdate>TRUE</CscFeature_Setting_DisableMenuSoftwareUpdate>
     <CscFeature_Setting_EnableDataRoamingButtonInQuickPanel>FALSE</CscFeature_Setting_EnableDataRoamingButtonInQuickPanel>
     <CscFeature_Setting_EnableFactoryResetPasswordWhenNoSIM>FALSE</CscFeature_Setting_EnableFactoryResetPasswordWhenNoSIM>
     <CscFeature_Setting_EnableMenuBlockCallMsg>FALSE</CscFeature_Setting_EnableMenuBlockCallMsg>
@@ -238,18 +240,17 @@
     <CscFeature_SyncML_DeltaBinaryDownVia>Unlimited</CscFeature_SyncML_DeltaBinaryDownVia>
     <CscFeature_SyncML_DisableWarning4DataCostDuringFota>TRUE</CscFeature_SyncML_DisableWarning4DataCostDuringFota>
     <CscFeature_SyncML_SwUpdateActionDuringRoaming>onlywifi,roaminginfo</CscFeature_SyncML_SwUpdateActionDuringRoaming>
-    <CscFeature_SystemUI_ConfigDefQuickSettingItem>Wifi,SilentMode,Bluetooth,RotationLock,Flashlight,Nfc,Location,MobileData,Performance,AirplaneMode,PowerSaving,WifiHotspot,BlueLightFilter,Aod,AllShareCast,PersonalMode,DeviceVisibility,DormantMode,Sync,UltraPowerSaving</CscFeature_SystemUI_ConfigDefQuickSettingItem>
-    <CscFeature_SystemUI_ConfigOpBrandingForDataIndicator>KTT</CscFeature_SystemUI_ConfigOpBrandingForDataIndicator>
-    <CscFeature_SystemUI_ConfigOpBrandingForIndicatorIcon>KTT</CscFeature_SystemUI_ConfigOpBrandingForIndicatorIcon>
+    <CscFeature_SystemUI_ConfigDefQuickSettingItem>Wifi,SilentMode,Bluetooth,RotationLock,Flashlight,PowerSaving,Nfc,MobileData,AirplaneMode,Performance,BlueLightFilter,WifiHotspot,PersonalMode,Location,Aod,AllShareCast,DeviceVisibility,DormantMode,Sync</CscFeature_SystemUI_ConfigDefQuickSettingItem>
+    <!--CscFeature_SystemUI_ConfigOpBrandingForDataIndicator>KTT</CscFeature_SystemUI_ConfigOpBrandingForDataIndicator-->
+    <!--CscFeature_SystemUI_ConfigOpBrandingForIndicatorIcon>KTT</CscFeature_SystemUI_ConfigOpBrandingForIndicatorIcon-->
     <CscFeature_SystemUI_ConfigOpBrandingForQuickSettingLabel>KTT</CscFeature_SystemUI_ConfigOpBrandingForQuickSettingLabel>
     <CscFeature_SystemUI_ConfigOpBrandingQuickSettingIcon>KTT</CscFeature_SystemUI_ConfigOpBrandingQuickSettingIcon>
     <CscFeature_SystemUI_ConfigOverrideDataIcon>LTE</CscFeature_SystemUI_ConfigOverrideDataIcon>
-    <!--CscFeature_SystemUI_ConfigPolicyDisplayOpLogo>HOME</CscFeature_SystemUI_ConfigPolicyDisplayOpLogo-->
     <CscFeature_SystemUI_ConfigQuickSettingPopup>KTT</CscFeature_SystemUI_ConfigQuickSettingPopup>
     <CscFeature_SystemUI_ConfigRuleRssiLevel>OneLevelPerSec</CscFeature_SystemUI_ConfigRuleRssiLevel>
     <CscFeature_SystemUI_ConfigSettingActvityFromQuickPanel>KTT</CscFeature_SystemUI_ConfigSettingActvityFromQuickPanel>
     <CscFeature_SystemUI_DisplayPlmnAtNotificationPanel>TRUE</CscFeature_SystemUI_DisplayPlmnAtNotificationPanel>
-    <CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel>
+    <CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel>TRUE</CscFeature_SystemUI_SupportDataUsageViewOnQuickPanel>    <CscFeature_Setting_SupportRealTimeNetworkSpeed>TRUE</CscFeature_Setting_SupportRealTimeNetworkSpeed>
     <CscFeature_VT_BlockDuringRoaming>FALSE</CscFeature_VT_BlockDuringRoaming>
     <CscFeature_VT_ConfigBearer>-CSVT</CscFeature_VT_ConfigBearer>
     <CscFeature_VT_ConfigOpStyleForCallStateLabel>TRUE</CscFeature_VT_ConfigOpStyleForCallStateLabel>
@@ -266,6 +267,7 @@
     <CscFeature_VoiceCall_ConfigAudioWaitingTone>KOR</CscFeature_VoiceCall_ConfigAudioWaitingTone>
     <CscFeature_VoiceCall_ConfigCnap>KTT_CNAP</CscFeature_VoiceCall_ConfigCnap>
     <CscFeature_VoiceCall_ConfigOpStyleForHandleAlertingState>TRUE</CscFeature_VoiceCall_ConfigOpStyleForHandleAlertingState>
+    <CscFeature_VoiceCall_ConfigOpStyleForHdIcon>NOHD</CscFeature_VoiceCall_ConfigOpStyleForHdIcon>
     <CscFeature_VoiceCall_ConfigOpStyleForLocalDtmf>ALWAYS</CscFeature_VoiceCall_ConfigOpStyleForLocalDtmf>
     <CscFeature_VoiceCall_ConfigOpStyleForLogs>KorLogsConcept,CnapLog</CscFeature_VoiceCall_ConfigOpStyleForLogs>
     <CscFeature_VoiceCall_ConfigOpStyleForNetworkSetting>SupportDataPopup,NetworkSettingForKorCommon</CscFeature_VoiceCall_ConfigOpStyleForNetworkSetting>
